@@ -1,0 +1,211 @@
+<div class="container px-4 px-lg-5">
+  <!-- Heading Row-->
+  <div class="row gx-4 gx-lg-5 align-items-center my-5">
+    <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
+        src="https://i.postimg.cc/V5y88T1D/istockphoto-1349328691-612x612.jpg" alt="..."></div>
+    <div class="col-lg-5">
+      <h1 class="font-weight-light">Welcome to Ashok`s Dental Clinic</h1>
+      <p>The best dental clinic in your locality.</p>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Book an
+        appointment now !</button>
+    </div>
+  </div>
+  <div class="bg-primary py-5 mb-5 rounded">
+    <div class="container px-4 px-lg-5 my-5 ">
+      <div class="text-center text-white">
+        <h1 class="display-4 fw-bolder">Hi {{uname}} !</h1>
+        <div class="btn-group  mt-4" role="group" aria-label="Basic example">
+          <a href="/book" type="button" class="btn  btn-success">Your Appointments</a>
+          <button (click)="logout()" type="button" class="btn btn-secondary">Logout</button>
+          <button (click)="deleteac()" type="button" class="btn btn-danger">Remove Account</button>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <section class="border border-primary bg-secondary p-5 mb-5 rounded">
+    <h2 class="text-center text-info">Our Vision</h2>
+    <img class="mt-2" style="width: 350px; height: 300px;"
+      src="https://i.postimg.cc/gjx1wKQS/1000-F-269366251-jqc-HWQey-Cb-Uw-IBLybjo1-Wrd-Jnwe4-Hv8q.jpg" alt="">
+    <p class="text-info mt-2 h3">Dr Ashok Mehta (BDS) : Our Founder and lead dentist</p>
+    <p class="mt-4 h5 text-warning">As a fellow dentist it was a dream for me to open a clinic under my name and provide
+      affordable dental service for everyone. So this my first venture and I hope I can make your smile healthy
+      everyday. We provide a full range of dental treatments and solutions for any kind of dental issue or problem that
+      you may have. Here are some of the treatments we offer - Cosmetic dental treatments like Smile Designing and
+      Dental veneers, Specialized Orthodontic treatments like Fastbraces and Aligners, Restorative treatments, Dental
+      Implants, Facial physiotherapy for facial rehabilitation, Laser dentistry, Cancer screening and Dental Surgery.
+      </p>
+  </section>
+  <section class="bg-secondary p-5 mb-5 text-center text-info rounded">
+    <h3>Services We Offer :</h3>
+    <div class="d-flex flex-row justify-content-evenly flex-wrap">
+      <div class="p-2 ">
+        <div class="hovereffect">
+          <img style="width: 200px; height: 200px;" class="img-responsive "
+            src="https://i.postimg.cc/xTBt2yXN/istockphoto-1312288228-612x612.jpg" alt="">
+          <div class="overlay">
+            <h2>Root Canal Surgery</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="p-2 ">
+        <div class="hovereffect">
+          <img style="width: 200px; height: 200px;" class="img-responsive"
+            src="https://i.postimg.cc/Ls8Hd0x2/ceramic-braces-different-from-metal-1200x675.jpg" alt="">
+          <div class="overlay">
+            <h2>Bracing</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="p-2 ">
+        <div class="hovereffect">
+          <img style="width: 200px; height: 200px;" class="img-responsive"
+            src="https://i.postimg.cc/dt0YL57L/COSMETIC-DENTISTRY.jpg" alt="">
+          <div class="overlay">
+            <h2>Other Cosmetic Surgeries</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-4 mt-3 mb-5 bg-primary text-warning rounded">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4">Patient's Testimonials :</h3>
+
+      </div>
+    </div>
+
+    <div class="row text-center mt-2">
+      <div class="col-md-4 mb-5 mb-md-0 ">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Maria Samantha</h5>
+        <h6 class="text-white mb-3">Housemaker</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Root canal Surgery was Affordable here !
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Lisa Cudrow</h5>
+        <h6 class="text-white mb-3">Graphic Designer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Teeth bracing is done masterfully !
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp" class="rounded-circle shadow-1-strong"
+            width="150" height="150" />
+        </div>
+        <h5 class="mb-3">John Smith</h5>
+        <h6 class="text-white mb-3">Marketing Specialist</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Thanks to doc i can sleep peacefully without any pain !
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!--modal form-->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body" style="background-color:rgb(85, 85, 255)">
+        <form [formGroup]="bookingForm" class="p-3 text-center" action="">
+          <h1 class="text-white"> Book here ! </h1>
+          <input formControlName="uname" class="border border-2 mt-2 form-control" type="text"
+            placeholder="Enter Username">
+          <div *ngIf="bookingForm.get('uname')?.errors &&bookingForm.get('uname')?.touched">
+            <p class="text-white">please include charecters only</p>
+          </div>
+          <input formControlName="patname" class="border border-2 mt-2 form-control" type="text"
+            placeholder="Patient Name">
+          <div *ngIf="bookingForm.get('patname')?.errors &&bookingForm.get('patname')?.touched">
+            <p class="text-white">please include charecters only</p>
+          </div>
+          <input formControlName="time" class="border border-2 mt-2 form-control" type="text"
+            placeholder="Time For Appointment (hh:ss)">
+          <div *ngIf="bookingForm.get('time')?.errors &&bookingForm.get('time')?.touched">
+            <p class="text-white">please enter in hh:ss format</p>
+          </div>
+          <input formControlName="psw" class="border border-2 mt-2 form-control" type="password" placeholder="Password">
+          <div *ngIf="bookingForm.get('psw')?.errors &&bookingForm.get('psw')?.touched">
+            <p class="text-white">please include charecters only</p>
+          </div>
+          <button (click)="booking()" class="mt-5 p-2 w-100 btn btn-light">Book Now!</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center">{{alertMes}}</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+
+      </div>
+    </div>
+  </div>
+</div>

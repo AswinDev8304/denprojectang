@@ -1,0 +1,20 @@
+<div class="text-center">
+    <div class="container text-center w-50 mt-5 mb-5 bg-primary rounded">
+        <h1 class="text-white">Login Here !</h1>
+        <form [formGroup]="loginForm" action="" style="margin-bottom: 100px;">
+            <input  formControlName="uname" id="u1" type="text" name="uname" placeholder="Enter your user name"
+            class="form-control mt-2  p-2 ">
+            <div *ngIf="loginForm.get('uname')?.errors &&loginForm.get('uname')?.touched">
+                <p class="text-white">please include characters only</p>
+            </div>
+            <input formControlName="psw"  id="p1" type="password" name="p1" placeholder="Enter Password"
+            class="form-control mt-2  p-2 ">
+            <div *ngIf="loginForm.get('psw')?.errors &&loginForm.get('psw')?.touched">
+                <p class="text-white">please include numbers and charecters only</p>
+            </div>
+            <button (click)="login()" type="submit" class="btn btn-info w-50 p-2 mt-4 mb-3">Login</button><br>
+            <p style="color: white;">Don't have an account ? <a routerLink="register"
+                style="text-decoration: none;color: bisque;">Create Account</a> </p><br>
+        </form>
+    </div>
+</div>

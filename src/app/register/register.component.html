@@ -1,0 +1,30 @@
+<div class="text-center">
+    <div class="container text-center w-50 mt-5 mb-5 bg-primary rounded">
+        <h1 class="text-white">Signup Here !</h1>
+        <form [formGroup]="registerForm" action="" style="margin-bottom: 100px;">
+            <input formControlName="uname"  id="u1" type="text" name="uname" placeholder="Enter Username"
+            class="form-control mt-2  p-2 ">
+            <div *ngIf="(this.registerForm.get('uname')?.errors)&& (this.registerForm.get('uname')?.touched)">
+                <p class="text-white">must contain charecters only</p>
+            </div>
+            <input formControlName="phno" id="ph1" type="text" name="phnno" placeholder="Enter your mob no"
+            class="form-control mt-2  p-2 ">
+            <div *ngIf="(this.registerForm.get('phno')?.errors)&& (this.registerForm.get('phno')?.touched)">
+                <p class="text-white">must contain numbers only</p>
+            </div>
+            <input  formControlName="psw" id="p1" type="password" name="p1" placeholder="Enter Password"
+            class="form-control mt-2  p-2 ">
+            <div *ngIf="(this.registerForm.get('psw')?.errors)&& (this.registerForm.get('psw')?.touched)">
+                <p class="text-white">must contain charecters and numbers only</p>
+            </div>
+            <input formControlName="cpsw" id="p1" type="password" name="p2" placeholder="Confirm Password"
+            class="form-control mt-2  p-2 ">
+            <div *ngIf="pswCheck">
+                <h5 class="text-white">password doesnt match</h5>
+            </div>
+            <button (click)=" signup()" type="submit" class="btn btn-info w-50 p-2 mt-4 mb-3">Signup</button><br>
+            <br>
+        </form>
+    </div>
+</div>
+

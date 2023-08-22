@@ -1,0 +1,28 @@
+<h1 style="text-decoration: underline;" class="text-center">Booking Details :</h1>
+<div class="p-5 container">
+    <table class="table table-primary table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Sl.no</th>
+            <th scope="col">Patient`s Name</th>
+            <th scope="col">Time</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of bookingdetails ;let j=index">
+            <td>{{j+1}}</td>
+            <td>{{i.patname}}</td>
+            <td>{{i.time}}</td>
+            <td>{{i.date}}</td>
+          </tr>
+    
+        </tbody>
+      </table>
+      <div class="text-center container p-5">
+        <div class="row ">
+          <a href="/home" class="btn btn-primary  col-3" type="button">Go Back</a>
+          <button (click)="cancelbooking()" type="button"  class="btn btn-primary col-3 " style="margin-left: 60px;"  type="button">Cancel Appointment</button>
+        </div>
+      </div>
+</div>
